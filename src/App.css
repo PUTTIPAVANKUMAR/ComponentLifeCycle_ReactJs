@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+/* * {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.responsive-container {
+  width: 80%;
+  max-width: 1140px;
+}
+
+.heading {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 96px;
+  margin-bottom: 32px;
+}
+
+.contact-form-container {
+  display: flex;
+}
+
+@media screen and (max-width: 575px) {
+  .contact-form-container {
+    flex-direction: column;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input {
+  color: #1e293b;
+  font-family: 'Roboto';
+  border: 1px solid #d7dfe9;
+  border-radius: 2px;
+  width: 28%;
+  height: 48px;
+  padding-left: 16px;
+  margin-right: 15px;
+  outline: none;
+  margin-bottom: 10px;
+  flex-grow: 1;
+  max-width: 320px;
+}
+
+@media screen and (max-width: 575px) {
+  .input {
+    width: 280px;
+  }
+}
+
+.button {
+  background-color: #0ea5e9;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 24px;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 575px) {
+  .button {
+    width: 200px;
+  }
+}
+
+.contacts-table {
+  padding-left: 0;
+  margin-top: 48px;
+}
+
+.table-header {
+  display: flex;
+  background-color: #f1f5f9;
+  list-style-type: none;
+  border: 1px solid #cbd5e1;
+}
+
+.table-header-cell {
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 32px;
+}
+
+.name-column {
+  width: 33%;
+  border-right: none;
+}
+
+.separator {
+  margin: 0;
+  border: 1px solid #cbd5e1;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  height: 100vh;
+  background-color: #011526;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 50px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toggle-button {
+  padding: 8px 12px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  background-color: #2ec2b3;
+  border-radius: 4px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  font-size: 16px;
+  border: none;
 }
